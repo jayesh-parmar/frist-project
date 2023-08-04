@@ -33,7 +33,7 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 //Import Excel File
-Route::get('inser_file',[UserController::class,'inser_file'])->name('show_file');
+Route::get('show_file',[UserController::class,'inser_file'])->name('show_file');
 Route::post('show_file',[UserController::class,'import'])->name('upload');
 
 // For User Route
